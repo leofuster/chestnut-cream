@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'TiemposTextRegular';
+    src: url('fonts/TiemposTextRegular.eot');
+    src: url('fonts/TiemposTextRegular.eot') format('embedded-opentype'),
+         url('fonts/TiemposTextRegular.woff2') format('woff2'),
+         url('fonts/TiemposTextRegular.woff') format('woff'),
+         url('fonts/TiemposTextRegular.ttf') format('truetype'),
+         url('fonts/TiemposTextRegular.svg#TiemposTextRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposHeadlineLight';
+    src: url('fonts/TiemposHeadlineLight.eot');
+    src: url('fonts/TiemposHeadlineLight.eot') format('embedded-opentype'),
+         url('fonts/TiemposHeadlineLight.woff2') format('woff2'),
+         url('fonts/TiemposHeadlineLight.woff') format('woff'),
+         url('fonts/TiemposHeadlineLight.ttf') format('truetype'),
+         url('fonts/TiemposHeadlineLight.svg#TiemposHeadlineLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'TiemposHeadlineBlack';
+    src: url('fonts/TiemposHeadlineBlack.eot');
+    src: url('fonts/TiemposHeadlineBlack.eot') format('embedded-opentype'),
+         url('fonts/TiemposHeadlineBlack.woff2') format('woff2'),
+         url('fonts/TiemposHeadlineBlack.woff') format('woff'),
+         url('fonts/TiemposHeadlineBlack.ttf') format('truetype'),
+         url('fonts/TiemposHeadlineBlack.svg#TiemposHeadlineBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextBold';
+    src: url('fonts/TiemposTextBold.eot');
+    src: url('fonts/TiemposTextBold.eot') format('embedded-opentype'),
+         url('fonts/TiemposTextBold.woff2') format('woff2'),
+         url('fonts/TiemposTextBold.woff') format('woff'),
+         url('fonts/TiemposTextBold.ttf') format('truetype'),
+         url('fonts/TiemposTextBold.svg#TiemposTextBold') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextBoldItalic';
+    src: url('fonts/TiemposTextBoldItalic.eot');
+    src: url('fonts/TiemposTextBoldItalic.eot') format('embedded-opentype'),
+         url('fonts/TiemposTextBoldItalic.woff2') format('woff2'),
+         url('fonts/TiemposTextBoldItalic.woff') format('woff'),
+         url('fonts/TiemposTextBoldItalic.ttf') format('truetype'),
+         url('fonts/TiemposTextBoldItalic.svg#TiemposTextBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'TiemposTextRegularItalic';
+    src: url('fonts/TiemposTextRegularItalic.eot');
+    src: url('fonts/TiemposTextRegularItalic.eot') format('embedded-opentype'),
+         url('fonts/TiemposTextRegularItalic.woff2') format('woff2'),
+         url('fonts/TiemposTextRegularItalic.woff') format('woff'),
+         url('fonts/TiemposTextRegularItalic.ttf') format('truetype'),
+         url('fonts/TiemposTextRegularItalic.svg#TiemposTextRegularItalic') format('svg');
+}
