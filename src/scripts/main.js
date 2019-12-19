@@ -12,7 +12,7 @@
 
 import imagesLoaded from "imagesloaded";
 import charming from "charming";
-import {TweenMax, TweenLite, TimelineMax, Expo} from "gsap";
+import {TweenMax, TimelineMax, Expo, Quart, Quint} from "gsap";
 import './cssVar';
 
 
@@ -379,6 +379,7 @@ import './cssVar';
             let promises = [];
             movingSlides.forEach(slide => promises.push(slide.move(direction === 'right' ? 'left' : 'right', this.gap)));
             Promise.all(promises).then(() => {
+                console.log(movingSlides);
                 // After all is moved, update the classes of the 3 visible slides and reset styles
                 movingSlides.forEach(slide => slide.reset());
                 // Set it again
