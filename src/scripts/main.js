@@ -1,22 +1,6 @@
-/**
- * demo.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2019, Codrops
- * http://www.codrops.com
- */
-
-
 import imagesLoaded from "imagesloaded";
 import charming from "charming";
 import {TweenMax, TimelineMax, Expo, Quart, Quint} from "gsap";
-import './cssVar';
-
-
-
 
 {
     const MathUtils = {
@@ -67,9 +51,8 @@ import './cssVar';
             this.DOM.number = this.DOM.el.querySelector('.number');
             this.DOM.subtitle = this.DOM.el.querySelector('.caption');
             this.DOM.imgWrap = this.DOM.el.querySelector('.img-wrap');
-            this.DOM.img = this.DOM.el.querySelector('.img');
+            this.DOM.img = this.DOM.imgWrap.querySelector('.img');
         }
-
         move(direction, val) {
             return new Promise((resolve, reject) => {
                 const tx = direction === 'left' ? '+=' + val*-1 : '+=' + val;
@@ -348,7 +331,6 @@ import './cssVar';
 
             this.resizeFn = () => this.calculateGap();
             window.addEventListener('resize', this.resizeFn);
-            console.log(this.DOM.contentItems);
 
             this.DOM.contentItems.forEach(item => {
                 item.querySelector('.img-wrap--content').addEventListener('click', () => this.closeSlide());
@@ -379,7 +361,6 @@ import './cssVar';
             let promises = [];
             movingSlides.forEach(slide => promises.push(slide.move(direction === 'right' ? 'left' : 'right', this.gap)));
             Promise.all(promises).then(() => {
-                console.log(movingSlides);
                 // After all is moved, update the classes of the 3 visible slides and reset styles
                 movingSlides.forEach(slide => slide.reset());
                 // Set it again
