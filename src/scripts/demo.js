@@ -309,6 +309,7 @@ import {TweenMax, TimelineMax, Expo, Quart, Quint} from "gsap";
             this.clickCenterFn = () => this.openSlide();
             this.DOM.interaction.center.addEventListener('click', this.clickCenterFn);
 
+
             this.mouseenterCenterFn = () => {
                 if ( this.isAnimating ) {
                     return;
@@ -345,6 +346,7 @@ import {TweenMax, TimelineMax, Expo, Quart, Quint} from "gsap";
 
             this.DOM.contentItems.forEach(item => {
                 item.querySelector('.img-wrap--content').addEventListener('click', () => this.closeSlide());
+                
             });
         }
         navigate(direction) {
