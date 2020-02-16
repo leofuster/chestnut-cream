@@ -432,4 +432,46 @@ import {TweenMax, TimelineMax, Expo, Quart, Quint} from "gsap";
     [...document.querySelectorAll('.frame__mode input[type="radio"]')].forEach(radio => radio.addEventListener('click', () => {
         document.body.classList[radio.parentNode.classList.contains('frame__mode-item--dark') ? 'add' : 'remove']('dark-mode');
     }));
+    // DARKMODE ANIMATION
+    const moonPath= 
+    "M14 22C14 34.1503 22 44 22 44C9.84974 44 0 34.1503 0 22C0 9.84974 9.84974 0 22 0C22 0 14 9.84974 14 22Z";
+
+    const sunnPath=
+    "M44 22C44 34.1503 34.1503 44 22 44C9.84974 44 0 34.1503 0 22C0 9.84974 9.84974 0 22 0C34.1503 0 44 9.84974 44 22Z";
+
+    const sunMode= document.querySelector ('#sunmode');
+    let toggle = false; 
+
+    sunMode.addEventListener('click', () => {
+        // set up the TL
+        const timeline = anime.timeline({
+            duration : 750,
+            easing : "easeOutExpo"
+        });
+        //add TL animations 
+        timeline.add({
+            targets: ".sunpath",
+            d: [
+                {value: toggle ? sunPath : moonPath}
+            ] 
+        })
+
+        .add({
+            targets:"#sunmode",
+            rotate:320
+        }, 
+        "-= 350"
+        )
+        .add({
+            targets: ".darkmode__animation",
+            classlist: toggle ? 'frame__mode-label--light' : 'frame__mode-label--dark'
+        })
+
+        if(!toggle){
+            toggle= true;
+        }else{
+            toggle= false;
+        }
+
+    });
 }
